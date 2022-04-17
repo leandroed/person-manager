@@ -96,13 +96,5 @@
         },
       ]
     }),
-    computed: {
-      // items () {
-      //   return Array.from({ length: this.length }, (k, v) => v + 1)
-      // },
-      length () {
-        return 100
-      },
-    },
   }
 </script>

@@ -20,6 +20,7 @@
                   <v-card
                     color="transparent"
                     flat
+                    dense
                     class="mx-auto rounded-lg"
                     max-width="700"
                   >
@@ -41,13 +42,22 @@
                   <v-card
                     class="mx-auto rounded-lg"
                     max-width="400"
+                    max-height="87"
                   >
                     <v-list-item three-line>
                       <v-list-item-content>
                         <v-list-item-title class="text-h7 mb-1">
                           Departamento
                         </v-list-item-title>
-                        <v-list-item-subtitle>Todos os departamentos</v-list-item-subtitle>
+                        <v-list-item-subtitle>
+                          <v-select
+                            class="mx-2"
+                            :items="departments"
+                            v-model="selectedDepartment"
+                            solo
+                            flat
+                          ></v-select>
+                        </v-list-item-subtitle>
                       </v-list-item-content>
                       <v-list-item-action>
                         <v-icon>mdi-view-grid-outline</v-icon>
@@ -116,11 +126,12 @@ export default {
     ExtraHours,
     Top5List
   },
-
   data: () => ({
-  })
+    selectedDepartment: '',
+    departments: ['Todos os departamentos'],
+  }),
+  mounted () {
+    this.selectedDepartment = this.departments[0]
+  }
 }
 </script>
-
-<style>
-</style>

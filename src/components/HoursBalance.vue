@@ -17,8 +17,8 @@
 
       <v-card-title class="action">
         <div class="text-center">
-          <h1 class="headline text--accent-2">309h07</h1>
-          <h1 class="headline text--accent-2">Banco Padrão</h1>
+          <h1 class="headline">309h07</h1>
+          <h1 class="headline">Banco Padrão</h1>
         </div>
       </v-card-title>
 

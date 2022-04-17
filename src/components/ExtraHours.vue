@@ -16,7 +16,7 @@
       </v-list-item>
 
       <v-card-title class="action">
-        <h1 class="text-center headline text--accent-2">224h19</h1>
+        <h1 class="text-center headline">224h19</h1>
       </v-card-title>
     </v-card>
 
